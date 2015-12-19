@@ -1,0 +1,47 @@
+body{
+  font-family: "Arial";
+}
+
+.app {
+border: 1px solid 1px solid rgb(171, 168, 132);;
+border-radius: 5px;
+padding: 10px;
+width: 46%;
+color: wheat;
+margin: 0 auto;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+background: #45484d; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #45484d 0%, #000000 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+box-shadow: 5px 5px 20px #515151;
+}
+
+audio {
+  margin: 0 auto;
+  display:inherit;
+}
+
+.librarySong, .queueSong {
+padding: 5px;
+border-bottom: 1px solid wheat;
+}
+
+.librarySong {
+cursor:pointer;
+  
+}
+
+.librarySong:hover{
+color: whitesmoke;
+}
+
+h2{
+  text-align:center;
+}
+
+.playCount {
+/* text-align: right; */
+float: right;
+}
