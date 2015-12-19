@@ -3,7 +3,7 @@ var LibraryEntryView = Backbone.View.extend({
 
   tagName: 'div',
 
-  template: _.template('<span class="artist">(<%= artist %>)</span><span class="title"><%= title %></span><span class="playCount"><%= playCount %></span>'),
+  template: _.template('<span class="addButton">+</span><span class="artist">(<%= artist %>)</span><span class="title"><%= title %></span><span class="playCount"><%= playCount %></span>'),
 
 
   initialize: function(){
@@ -16,13 +16,17 @@ var LibraryEntryView = Backbone.View.extend({
   },
 
   events: {
-    'click': function() {
+    'click .artist, .title': function() {
       this.model.enqueue();
       this.model.play();
-    }
+    },
+    'click .addButton': function(){
+      this.model.saveToList();
+    },
   },
 
   render: function(){
+    //console.log('rendering entry');
     return this.$el.attr("class", "librarySong").html(this.template(this.model.attributes));
   }
 

@@ -41,7 +41,13 @@ var SongModel = Backbone.Model.extend({
     this.timeEnqueued = 0;
     
     this.trigger('ended',this);
+  },
+  saveToList: function(listName){
+    console.log('firing saveToList');
+    this.trigger('saveToList',this);
+  },
+  removeFromList: function(){
+    this.trigger('removeFromList',this);
   }
-
 
 });

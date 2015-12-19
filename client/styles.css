@@ -24,12 +24,14 @@ audio {
 }
 
 .librarySong, .queueSong {
-padding: 5px;
+padding: 7px;
 border-bottom: 1px solid wheat;
+font-family: 'Arvo', serif;
 }
 
 .librarySong {
 cursor:pointer;
+letter-spacing: 0.2px;
   
 }
 
@@ -39,9 +41,15 @@ color: whitesmoke;
 
 h2{
   text-align:center;
+  font-family: 'Rock Salt', cursive;
 }
 
 .playCount {
 /* text-align: right; */
 float: right;
 }
+
+span.title {
+margin: 0 0 0 14px;
+}
+
