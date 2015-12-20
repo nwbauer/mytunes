@@ -6,6 +6,7 @@ var PlayListView = Backbone.View.extend({
   initialize: function() {
     // this.render();
     this.model.on('renderPlayListView',function(){
+      console.log('rendering playList');
       this.trigger('renderPlayListsView',this);
     },this);
 
