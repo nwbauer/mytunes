@@ -29,8 +29,19 @@ var SongQueue = Songs.extend({
 
   playFirst: function(){
     // console.log('playing first',this.at(0));
-    this.at(0).play();
+    if(this.length !== 0){
+      this.at(0).play();
+    }else{
+      console.log("nothing to play!");
+    }
 
+ 
+  },
+
+  replaceQueue: function(playList){
+    console.log("SongQueue, replacing queue");
+    this.reset(playList.get('list').models);
+    this.playFirst();
   }
 
 });

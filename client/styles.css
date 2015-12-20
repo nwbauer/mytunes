@@ -1,5 +1,6 @@
 body{
-  font-family: "Arial";
+  font-family: 'Arvo', serif;
+
 }
 
 .app {
@@ -23,10 +24,13 @@ audio {
   display:inherit;
 }
 
-.librarySong, .queueSong {
+.librarySong, .queueSong, .listSong {
 padding: 7px;
 border-bottom: 1px solid wheat;
-font-family: 'Arvo', serif;
+}
+
+.listSong {
+  color: #fff;
 }
 
 .librarySong {
@@ -44,6 +48,13 @@ h2{
   font-family: 'Rock Salt', cursive;
 }
 
+h3 {
+  text-align: center;
+}
+
+h3 .play{
+  margin-left:20px;
+}
 .playCount {
 /* text-align: right; */
 float: right;
@@ -53,3 +64,18 @@ span.title {
 margin: 0 0 0 14px;
 }
 
+.addButton{
+  margin-right: 10px;
+}
+
+.addButton {
+  margin-right: 10px;
+  border: 1px solid rgba(0,0,0,0);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.addButton:hover {
+  border: 1px solid #fff;
+  background-color: #484946;
+}
